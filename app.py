@@ -5,6 +5,7 @@ from message_buffer import buffer_message
 
 app = FastAPI()
 
+
 @app.post('/webhook')
 async def webhook(request: Request):
     data = await request.json()
