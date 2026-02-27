@@ -12,6 +12,7 @@ redis_client = redis.Redis.from_url(REDIS_URL, decode_responses=True)
 conversational_rag_chain = get_conversational_rag_chain()
 debounce_tasks = defaultdict(asyncio.Task)
 
+
 def log(*args):
     print('[BUFFER]', *args)
 
